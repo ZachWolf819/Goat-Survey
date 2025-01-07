@@ -1,4 +1,4 @@
-h1 {
+  h1 {
     background-color: #a5bbaf;
     color: navy;
     font-size: 80px;
@@ -99,5 +99,5 @@ h1 {
   @media (max-width: 600px) {
       .container {
           padding: 10px;
-            }
-            }
+      }
+  }
