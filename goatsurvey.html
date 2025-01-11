@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wolf Acres Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Wolf Acres Survey Form</h1>
+  
+    <p id="description">Please take a moment to fill out a brief survey about our farm below!</p>
+  
+    <form id="survey-form">
+      <fieldset>
+        <div class="forms">
+          <label id="name-label" for="name">Enter Your First Name:
+          <input id="name" name="name" type="text" placeholder="Enter First Name Here..." required />
+        </label>
+  
+          <label for="last-name">Enter Your Last Name:
+          <input id="last-name" name="last-name" type="text" placeholder="Enter Last Name Here..." required />
+        </label>
+  
+          <label id="email-label" for="email">Enter Your Email:
+          <input id="email" name="email" type="email" placeholder="Enter Email Here..." required />
+        </label>
+  
+          <label id="age-label" for="age">Enter Your Age:
+          <input id="age" name="age" type="number" placeholder="Enter Age Here..." required>
+        </label>
+        </div>
+      </fieldset>
+ 
+      <fieldset>
+        <div class="forms2">
+          <label for="number">Rate Wolf Acres on a scale of 1-10! (10 BEING THE BEST!!!)</label>
+          <input id="number" name="rating" type="number" max="10" min="1" placeholder="10">
+     
+          <p>Which flavor goat cheese is your favorite?</p>
+          <select id="dropdown" name="flavors">
+            <option value="Blueberry">Blueberry</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Dill and Garlic">Dill and Garlic</option>
+            <option value="Everything Bagel">Everything Bagel</option>
+            <option value="Herbs">Herbs</option>
+            <option value="Plain">Plain</option>
+            <option value="Red Pepper Flake">Red Pepper Flake</option>
+            <option value="Cowboy Candy">Cowboy Candy</option>
+          </select>
+
+          <div class="radio">
+            <p>Would you like to see more flavors?</p>
+            <label for="yes">
+              <input id="yes" name="more-flavors" value="yes" type="radio" checked>
+              Yes
+            </label>
+            <label for="no">
+              <input id="no" name="more-flavors" value="no" type="radio">
+              No
+            </label>
+          <p>Have you ever had goat cheese before?</p>
+          <label for="q1-a1">
+            <input type="radio" id="q1-a1" name="q1" value="yes" checked>
+            Yes
+          </label>
+
+          <label for="q1-a2">
+            <input type="radio" id="q1-a2" name="q1" value="no">
+            No
+          </label>
+
+          <p>Did you like our Goat Cheese?</p>
+          <label for="q2-a1">
+            <input id="q2-a1" name="q2" value="yes" type="radio" checked>
+          Yes
+        </label>
+
+        <label for="q2-a2">
+          <input id="q2-a2" name="q2" value="no" type="radio">
+          No
+        </label>
+        </div>
+      </div>
+    </fieldset>
+            
+      <fieldset>
+        <div class="forms3">
+          <label for="comments">Please leave us comments and recommendations!!!</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
